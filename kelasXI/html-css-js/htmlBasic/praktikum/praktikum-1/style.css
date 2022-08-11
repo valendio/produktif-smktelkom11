@@ -1,0 +1,95 @@
+:root {
+    background-color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 80px;
+}
+
+.pancasila-satu {
+    max-width: 100%;
+}
+
+.image-1-container img {
+    float: left;
+    display: flex;
+    width: 30vh;
+    height: 30vh;
+    margin-top: 50px;
+}
+
+.image-1-text h3 {
+    font-weight: 450;
+    font-size: 33px;
+    text-align: left;
+    margin-top: 7rem;
+    max-width: 50%;
+}
+
+.image-2-container img {
+    float: right;
+    display: flex;
+    width: 30vh;
+    height: 30vh;
+}
+
+.image-2-text h3 {
+    font-weight: 450;
+    font-size: 33px;   
+    text-align: right; 
+    margin-top: 5rem;
+}
+
+.image-3-container img {
+    float: left;
+    display: flex;
+    width: 30vh;
+    height: 30vh;
+}
+
+.image-3-text h3 {
+    font-weight: 450;
+    font-size: 33px;   
+    text-align: left; 
+    margin-top: 5rem;
+}
+
+.image-4-container img {
+    float: right;
+    display: flex;
+    width: 30vh;
+    height: 30vh;
+}
+
+.image-4-text h3 {
+    font-weight: 450;
+    font-size: 33px; 
+    text-align: right;   
+    margin-top: 4rem;
+}
+
+.image-5-container img {
+    float: left;
+    display: flex;
+    width: 30vh;
+    height: 30vh;
+}
+
+.image-5-text h3 {
+    font-weight: 450;
+    font-size: 33px;   
+    text-align: left; 
+    margin-top: 5rem;
+}
+
+.table-pancasila table {
+    width: auto;
+}
+
+.table-pancasila img {
+    width: 80vh;
+    height: 80vh;
+}

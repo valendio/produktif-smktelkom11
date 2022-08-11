@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input form</title>
+</head>
+
+<body>
+
+    <script>
+        function test() {
+            var a = document.kirim.T1.value
+            if (a%2 == 0) 
+                document.kirim.T2.value="bilangan genap"
+            else 
+                document.kirim.T2.value="bilangan ganjil"           
+        }
+    </script>
+
+    <form method="post" name="kirim">
+        <p>bilangan <input type="text" name="T1" size="20"></p>
+        <p><input type="button" value="TEBAK" name="B1" onclick=test()></p>
+        <p>Merupakan bilangan <input type="text" name="T2" size="20"></p>
+    </form>
+    
+</body>
+</html>

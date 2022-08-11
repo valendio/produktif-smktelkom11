@@ -1,0 +1,61 @@
+:root {
+    font-size: 28px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+
+}
+
+.bg-color {
+    background-color: red;
+    text-align: center;
+}
+
+.bg-image {
+    background-image: url("/basic/basic-1/asset/84d5172ad51ca0e54c4721123bd95e77.jpg");
+    color: white;
+    width: 100%;
+    height: 5rem;
+    margin-top: 1.2rem;
+}
+
+.bg-image h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.bg-position {
+    background-color: blue;
+    width: 100%;
+    height: 13rem;
+    margin-top: 1.2rem;
+
+}
+
+.bg-position img {
+    position: relative;
+    margin-top: 2.7rem;
+    margin-left: 1rem;
+}
+
+.bg-position h1 {
+    float: right;
+    margin-top: -18vh;
+    margin-right: 50vh;
+}
+
+.bg-gradient {
+    background-image: linear-gradient(to right, red , yellow);
+    width: 100%;
+    height: 3rem;
+}
+.text-bg-gradient h1 {
+    text-align: center;
+}
+
+.bg-gradient-2 {
+    background-image: linear-gradient(red, yellow, green);
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+}

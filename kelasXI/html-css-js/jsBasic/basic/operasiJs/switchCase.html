@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch statement</title>
+</head>
+<body>
+
+    <script>
+        function test() {
+            a = window.prompt("Masukkan nilai(1-5)", 0)
+            switch(a) {
+                case "1" :
+                    document.writeln("angka satu")
+                    break
+                case "2" :
+                    document.writeln("angka dua")
+                    break
+                case "3" :
+                    document.writeln("angka tiga")
+                    break
+                case "4" :
+                    document.writeln("angka empat")
+                    break
+                case "5" :
+                    document.writeln("angka lima")
+                    break
+                default : 
+                document.writeln("Just type from 1-5")
+            }
+        }
+    </script>
+
+    <input type="button" value="just click me" onclick=test()>
+    
+</body>
+</html>

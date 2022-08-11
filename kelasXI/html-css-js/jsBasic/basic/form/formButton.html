@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button form</title>
+</head>
+<body>
+
+    <script>
+        function ubahWarnaLB(warna) {
+            document.bgColor = warna
+        }
+        function ubahWarnaLD(warna) {
+            document.fgColor = warna
+        }
+    </script>
+
+    <h1>TEST</h1>
+
+    <form action="">
+        <input type="button" value="Latar Belakang hijau" onclick="ubahWarnaLB('green')">
+        <input type="button" value="Latar Belakang putih" onclick="ubahWarnaLB('white')">
+        <input type="button" value="Latar Belakang salem" onclick="ubahWarnaLB('salmon')">
+        <input type="button" value="Teks Belakang kuning" onclick="ubahWarnaLD('yellow')">
+        <input type="button" value="Teks Belakang biru" onclick="ubahWarnaLD('blue')">
+        <input type="button" value="Teks Belakang silver" onclick="ubahWarnaLD('silver')">
+    </form>
+
+    <script>
+        document.writeln("Dimodifikasi terakahir pada :" +document.lastModified)
+    </script>
+
+    
+</body>
+</html>
