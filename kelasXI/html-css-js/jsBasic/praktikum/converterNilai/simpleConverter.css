@@ -1,0 +1,14 @@
+:root {
+    background-color: whitesmoke;
+}
+
+.input{
+    background-color: red;
+    padding: 20px 40px;
+    border-radius: 15px;
+}
+
+.button {
+    background-color: red;
+    margin-top: 1rem;
+}

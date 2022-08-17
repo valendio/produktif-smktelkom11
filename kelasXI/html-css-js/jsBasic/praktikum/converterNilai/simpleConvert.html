@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Nilai</title>
+    <link rel="stylesheet" href="simpleConverter.css">
+</head>
+<body>
+
+    <script>
+
+
+        function convert() {
+
+            var nilai = document.send.s1.value
+            if (nilai >=93) {
+                document.send.s2.value="Anda mendapat predikat : A"
+            } else if (nilai >=83){
+                document.send.s2.value="Anda mendapat predikat : B"
+            } else if (nilai >=75) {
+                document.send.s2.value="Anda mendapat predikat : C"
+            } else if (nilai >=50) {
+                document.send.s2.value="Anda mendapat predikat : D"
+            } else if (nilai >=0){
+                document.send.s2.value="Anda mendapat prediakt : E"
+            } else {
+                document.send.s2.value = "value tidak valid"
+            }
+        }
+    </script>
+
+    <form class="form" name="send" method="post">
+        <div>
+            <p>bilangan</p>
+            <input class="input" type="text" name="s1" size="20">
+        </div>
+        <div>
+            <input class="button" type="button" value="Nilai" name="B1" onclick=convert()>
+        </div>
+        <div class="output">
+            <p>Merupakan bilangan</p>
+            <input type="text" name="s2" size="40">
+        </div>
+    </form>
+    
+</body>
+</html>
