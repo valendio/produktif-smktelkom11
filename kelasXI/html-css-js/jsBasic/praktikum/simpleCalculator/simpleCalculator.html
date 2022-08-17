@@ -7,8 +7,41 @@
     <title>Simple Calculator</title>
 
     <link rel="stylesheet" href="simpleCalculator.css">
+    <script src="simpleCalculator.js"></script>
+
 </head>
 <body>
+
+    <script>
+        function plus () {
+            
+        }
+    </script>
+
+    <form name="calculate" method="post">
+        <div class="bilangan-kedua">
+            <p>Bilangan Pertama</p>
+            <input type="number" name="input1">
+        </div>
+
+        <div class="bilangan-kedua">
+            <p>Bilangan Kedua</p>
+            <input type="number" name="input2">
+        </div>
+
+        <div class="output">
+            <p>Merupakan bilangan</p>
+            <input type="number" name="output">
+        </div>
+    </form>
+
+    <form action="">
+        <input type="button" value="+" onclick="plus(input1, input2)">
+        <input type="button" value="-">
+        <input type="button" value="/">
+        <input type="button" value="*">
+    </form>
+
     
 </body>
 </html>
