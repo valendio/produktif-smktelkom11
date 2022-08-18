@@ -5,43 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator</title>
-
-    <link rel="stylesheet" href="simpleCalculator.css">
-    <script src="simpleCalculator.js"></script>
-
 </head>
 <body>
 
-    <script>
-        function plus () {
+    <div class="wrapper">
+		<h2>Simple Calculator</h2><input id="num-one" name="num-one" type="text"> 
+        <input id="num-two" name="num-two" type="text"><br>
+		<br>
+		<input checked id="box1" name="sign-area" type="button" value="tambah" onclick="tambah()"> 
+        <input id="box2" name="sign-area" type="button" value="kurang" onclick="kurang()">
+        <input id="box3" name="sign-area" type="button" value="kali" onclick="kali()">
+        <input id="box4" name="sign-area" type="button" value="bagi" onclick="bagi()"><br>
+		<br>
+		<h1 id="resultArea"></h1>
+	</div>
+	<script>
+            function tambah () {
+               var x = Number(document.getElementById("num-one").value);
+               var y = Number(document.getElementById("num-two").value);
+               var z = 0;
+
+                z = x + y
+                document.getElementById("resultArea").innerHTML = " Result : "+ String(z);
+            }
+
+            function kurang () {
+               var x = Number(document.getElementById("num-one").value);
+               var y = Number(document.getElementById("num-two").value);
+               var z = 0;
+
+                z = x - y
+                document.getElementById("resultArea").innerHTML = " Result : "+ String(z);
+            }
             
-        }
-    </script>
+            function kali () {
+               var x = Number(document.getElementById("num-one").value);
+               var y = Number(document.getElementById("num-two").value);
+               var z = 0;
 
-    <form name="calculate" method="post">
-        <div class="bilangan-kedua">
-            <p>Bilangan Pertama</p>
-            <input type="number" name="input1">
-        </div>
+                z = x * y
+                document.getElementById("resultArea").innerHTML = " Result : "+ String(z);
+            }
+            function bagi () {
+               var x = Number(document.getElementById("num-one").value);
+               var y = Number(document.getElementById("num-two").value);
+               var z = 0;
 
-        <div class="bilangan-kedua">
-            <p>Bilangan Kedua</p>
-            <input type="number" name="input2">
-        </div>
-
-        <div class="output">
-            <p>Merupakan bilangan</p>
-            <input type="number" name="output">
-        </div>
-    </form>
-
-    <form action="">
-        <input type="button" value="+" onclick="plus(input1, input2)">
-        <input type="button" value="-" onclick=minus()>
-        <input type="button" value="/">
-        <input type="button" value="*">
-    </form>
-
+                z = x / y
+                document.getElementById("resultArea").innerHTML = " Result : "+ String(z);    
+           }
+	</script>
     
 </body>
 </html>
