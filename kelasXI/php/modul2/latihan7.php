@@ -14,5 +14,5 @@ $arrWarna[] = "Putih";
 
 echo $arrWarna[0];
 echo "<br>";
-echo $arrWarna[2];
+  $arrWarna[2];
 echo "<br>";
