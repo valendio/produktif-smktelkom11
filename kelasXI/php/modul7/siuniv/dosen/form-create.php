@@ -1,9 +1,5 @@
 <?php
 ?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,12 +13,9 @@
 <h1>Tambah Data Dosen</h1>
 <form action="create.php" method="POST">
     Nama Dosen : <input type="text" name="nama_dosen" id="nama_dosen"><br>
-
+    
     No Telepon :  <input type="text" name="telp" id="telp"><br>
     <input type="submit" value="Save" name="btnSimpan"><br>
-</form>
-
-
-
+</form>  
 </body>
 </html>

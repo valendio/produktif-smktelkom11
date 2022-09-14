@@ -25,7 +25,7 @@ $num = mysqli_num_rows($result);
         <th>No. </th>
         <th>Nama dosen</th>
         <th>Telepon</th>
-        <th>Aksi</th>
+        <th colspan="2">Aksi</th>
     </tr>
 
     <?php
@@ -36,7 +36,8 @@ $num = mysqli_num_rows($result);
             echo "<td>" .$no ."</td>";
             echo "<td>" .$data['nama_dosen'] . "</td>";
             echo "<td>" .$data['telp'] ."</telp>";
-            echo "<td><a href = 'form-update.php?id_dosen=" .$data['id'] ." '>Edit </a> | </td>";
+            echo "<td><a href = 'form-update.php?id_dosen=" .$data['id_dosen'] ." '>Edit </a> | </td>";
+            echo "<td><a href= 'delete.php?id_dosen= " .$data['id_dosen'] ." 'onclick='return confirm(\"Apakah anda yakin ingin menghapus data?\") '>Hapus</a></td>";
             echo "</tr>";
             $no++;
 
@@ -46,6 +47,6 @@ $num = mysqli_num_rows($result);
     }
     ?>
 </table>
-
+    
 </body>
 </html>

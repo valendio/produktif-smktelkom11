@@ -10,7 +10,7 @@ $query = "UPDATE dosen SET nama_dosen = '$nama_dosen', telp = '$telp' WHERE id_d
 
 $result = mysqli_query($connect, $query);
 
-$num = mysqli_fetch_assoc($connect);
+$num = mysqli_affected_rows($connect);
 
 
 if ($num > 0) {

@@ -1,7 +1,7 @@
 <?php
 include "../connect.php";
 
-$id_dosen = $_GET["id_dosen"];
+$id_dosen = $_GET['id_dosen'];
 
 $query = "SELECT * FROM dosen WHERE id_dosen = $id_dosen";
 
@@ -35,11 +35,11 @@ $row = mysqli_fetch_assoc($result);
         </tr>
         <tr>
             <td></td>
-            <td><input type="hidden" name="id_dosen"></td>
-            <td><input type="submit" value="Save" name="btnSimpan" values="<?php echo $row["id_dosen"]; ?>"></td>
+            <td><input type="hidden" name="id_dosen"  value="<?php echo $row["id_dosen"]; ?>"></td>
+            <td><input type="submit" value="Save" name="btnSimpan"></td>
         </tr>
     </table>
 </form>
-
+    
 </body>
 </html>
