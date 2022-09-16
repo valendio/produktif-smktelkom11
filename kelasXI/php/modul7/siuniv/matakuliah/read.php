@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!(isset($_SESSION['user']))){
+    header("location: ../login/form-login.php");
+}
     include "../connect.php";
 
     $query = "SELECT kode, nama_matkul, sks, semester, nama_dosen
